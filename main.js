@@ -89,10 +89,51 @@ Boolean(function(){}); //Cualquier función es verdadera también
 //CONDICIONALES
 
 //if, else if, else (Lo mismo que C++)
+
+
 //Operador ternario en condicionales
 //Condición ? true: false    (Ejemplo)
-
 let numero = 2;
-
 let resultado = numero === 1 ? "Soy un uno" : "No soy un uno";
 console.log(resultado);
+
+//switch
+let seleccion = 1;
+switch(seleccion)
+{
+    case 1:
+        console.log("Es un uno");
+        break;
+    case 2:
+        console.log("Es un dos");
+        break;
+    case 3:
+        console.log("Es un tres");
+        break;
+    default:
+        console.log("Ingresa un valor válido");
+        break;
+}
+
+//ARREGLOS
+let frutas = ['Mango', 'Manzana', 'Platano'];
+console.log(frutas[4]);
+
+//length 
+console.log(frutas.length); //Calcula el tamaño del arreglo
+//Push
+let masFrutas = frutas.push('Papaya'); //Push agrega elementos
+console.log(frutas);
+//Unshift
+let addStart = frutas.unshift('Aguacate'); //unshift agrega elemento al inicio del arreglo
+console.log(frutas);
+//Shift
+let eliminaFruta = frutas.shift(); //Elimina el primer elemento del arreglos
+console.log(frutas);
+//Pop
+let eliminaUltimaFruta = frutas.pop('Papaya'); //Pop siempre elimina el último elemento
+console.log(frutas);
+//IndexOf
+let animales = ['Perro', 'Gato', 'Conejo', 'Leon'];
+let posicion = animales.indexOf('Conejo'); //IndexOf devuelve el indice de un elemento específico en el arreglo
+console.log(posicion);
